@@ -11,10 +11,8 @@ public class ScheduledExecutorTest {
 	        
 	        long initialDelay = 1;
 	        long period = 1;
-	        // �����ڿ�ʼ1����֮��ÿ��1����ִ��һ��job1
 	        service.scheduleAtFixedRate(new MyScheduledExecutor("job1"), 0, 10, TimeUnit.SECONDS);
 	        
-	        // �����ڿ�ʼ2����֮��ÿ��2����ִ��һ��job2
 	        service.scheduleWithFixedDelay(new MyScheduledExecutor("job2"),0, 10, TimeUnit.SECONDS);
 	}
 
